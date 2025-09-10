@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1700" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chess.democracy.edition.LoginController">
+   <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="700.0" style="-fx-background-color: #464F9B;">
+      <ImageView fitHeight="1000.0" fitWidth="700.0">
+         <Image url="@images/login_pic.jpg" />
+      </ImageView>
+      <Label layoutY="900.0" prefHeight="51.0" prefWidth="700.0" text="   Welcome! Chess: Democracy Edition" textAlignment="CENTER" textFill="#fff8f8">
+         <font>
+            <Font name="Lucida Sans Unicode" size="25.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+   <AnchorPane layoutX="700.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: White;">
+      <TextField fx:id="emailField" layoutX="200.0" layoutY="382.0" prefHeight="40.0" prefWidth="400.0" promptText="Enter Email">
+         <font>
+            <Font name="SansSerif Regular" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="LoginButton" layoutX="510.0" layoutY="540.0" mnemonicParsing="false" onAction="#login" prefHeight="42.0" prefWidth="90.0" style="-fx-cursor: hand; -fx-background-color: #f3d87e;" text="Login">
+         <font>
+            <Font name="Lucida Sans Unicode" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="200.0" layoutY="210.0" prefHeight="51.0" prefWidth="110.0" text="Login">
+         <font>
+           <Font name="Lucida Sans Unicode" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="441.0" text="Password">
+         <font>
+            <Font name="Lucida Sans Unicode" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="356.0" text="Email">
+         <font>
+            <Font name="Lucida Sans Unicode" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="764.0" layoutY="830.0" prefHeight="21.0" prefWidth="125.0" text="Not a member?">
+         <font>
+            <Font name="Lucida Sans Unicode" size="15.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="signupHyperlink" layoutX="874.0" layoutY="826.0" onAction="#signup" prefHeight="21.0" text="Sign up!" textFill="#558b3d" underline="true">
+         <font>
+            <Font name="Lucida Sans Unicode" size="15.0" />
+         </font>
+      </Hyperlink>
+      <CheckBox fx:id="showPasswordCheckBox" layoutX="200.0" layoutY="523.0" mnemonicParsing="false" onAction="#showPassword" prefHeight="9.0" prefWidth="110.0" text="Show password">
+         <font>
+            <Font name="Lucida Sans Unicode" size="10.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="passwordFieldText" layoutX="200.0" layoutY="467.0" prefHeight="40.0" prefWidth="400.0" promptText="Enter Password">
+         <font>
+            <Font name="SansSerif Regular" size="13.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="200.0" layoutY="467.0" prefHeight="40.0" prefWidth="400.0" promptText="Enter Password">
+         <font>
+            <Font name="SansSerif Regular" size="13.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="200.0" layoutY="262.0" prefHeight="51.0" prefWidth="329.0" text="Hello! let's get started" textAlignment="CENTER">
+         <font>
+            <Font name="Lucida Sans Unicode" size="15.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+</AnchorPane>
